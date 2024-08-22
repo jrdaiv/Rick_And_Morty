@@ -9,7 +9,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
       - name: Install dependencies
-        uses: npm ci
+        run: npm ci
       - name: Print debug info
         run: |
           echo "Node Version: $(node --version)"
